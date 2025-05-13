@@ -1,7 +1,6 @@
 import { useState } from "react"
 import { Button } from "./button"
-
-
+import Marcinho from "../assets/marcinho.png"
 
 export function MostrarEsconder() {
     const [mostrar, setMostrar] = useState(true)
@@ -15,6 +14,7 @@ export function MostrarEsconder() {
             {
                 mostrar ? (
                 <div className="flex flex-col items-center justify-center">
+                    <img src={Marcinho} alt="marcinho" />
                     <p className="mb-2">Marcinho é legal</p>
                     <Button text="Esconder" onClick={mostrarEsconder} color="red"/>
                 </div>
