@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Button } from "./button"
+import { Button } from "./Button"
 import Marcinho from "../assets/marcinho.png"
 
 export function MostrarEsconder() {
