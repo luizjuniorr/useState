@@ -6,7 +6,12 @@ export function MostrarEsconder() {
     const [mostrar, setMostrar] = useState(true)
 
     function mostrarEsconder() {  
-        setMostrar(!mostrar)
+        if(mostrar === true) {
+            setMostrar(false)
+            return
+        }
+
+        setMostrar(true)
     }
     
     return(
